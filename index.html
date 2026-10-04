@@ -3,103 +3,109 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Демо-концепция сайта Beauty Terra: эстетическая медицина и профессиональная дистрибуция в Узбекистане.">
-  <title>Beauty Terra - клиника и дистрибуция</title>
-  <link rel="preconnect" href="https://images.unsplash.com">
+  <meta name="description" content="Beauty Terra — клиника эстетической медицины, профессиональная дистрибуция и обучение в Узбекистане.">
+  <title>Beauty Terra — эстетическая медицина и профессиональные решения</title>
+  <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержанию</a>
-  <div class="demo-bar" role="note"><strong>Демо-концепция</strong><span>Контент и контакты требуют подтверждения перед публикацией</span></div>
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Beauty Terra, на главную"><span class="brand-mark">BT</span><span><b>BEAUTY TERRA</b><small>UZBEKISTAN</small></span></a>
-      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
-      <nav id="main-nav" class="main-nav" aria-label="Основная навигация">
-        <a href="#directions">Направления</a><a href="#clinic">Клиника</a><a href="#distribution">Дистрибуция</a><a href="#about">О нас</a>
-        <a class="nav-cta" href="#contact">Связаться</a>
-      </nav>
-    </div>
+  <header class="header" id="top">
+    <a class="wordmark" href="#top" aria-label="Beauty Terra, наверх">BEAUTY TERRA</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span>Меню</span><i></i></button>
+    <nav class="nav" id="main-nav" aria-label="Основная навигация">
+      <a href="#clinic">Клиника</a><a href="#distribution">Дистрибуция</a><a href="#education">Обучение</a><a href="#contact">Контакты</a>
+    </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Эстетическая медицина • Профессиональная дистрибуция</p>
-          <h1>Территория современной <em>эстетики</em></h1>
-          <p class="hero-lead">Beauty Terra объединяет заботу о красоте и профессиональные решения для специалистов. Выберите направление, которое подходит именно вам.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#clinic">Для пациентов</a><a class="btn btn-ghost" href="#distribution">Для специалистов</a></div>
-          <div class="trust-row" aria-label="Ключевые принципы"><span>Персональный подход</span><span>Современные методики</span><span>Профессиональный выбор</span></div>
-        </div>
-        <div class="hero-visual" aria-label="Интерьер современной клиники">
-          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=85" alt="Светлый интерьер эстетической клиники">
-          <div class="hero-card"><span>BEAUTY TERRA</span><strong>Ваша красота - наша забота!</strong></div>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-meta"><span>Ташкент · Узбекистан</span><span>Эстетическая медицина / 2026</span></div>
+      <h1 id="hero-title"><span>Beauty</span><span class="indent">Terra</span></h1>
+      <div class="hero-bottom">
+        <p class="hero-intro">Единое пространство для пациентов и специалистов: клиника, профессиональная дистрибуция и обучение.</p>
+        <a class="round-link" href="#directions" aria-label="Смотреть направления"><span>Смотреть<br>направления</span><b aria-hidden="true">↓</b></a>
+      </div>
+    </section>
+
+    <section class="gallery-intro" id="directions">
+      <figure class="hero-art reveal">
+        <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1800&q=88" alt="Фрагмент классической скульптуры в музейном пространстве">
+        <figcaption><span>Экспонат 001</span><span>Красота как предмет точного наблюдения</span></figcaption>
+      </figure>
+      <div class="manifesto reveal">
+        <p class="kicker">BEAUTY TERRA / МАНИФЕСТ</p>
+        <p class="display-copy">Эстетика начинается <em>не с обещания,</em> а с внимания к человеку.</p>
+        <p class="body-copy">Мы объединяем три направления в одном пространстве — помощь пациентам, решения для профессиональной практики и обмен знаниями.</p>
+      </div>
+    </section>
+
+    <section class="clinic dark" id="clinic">
+      <div class="section-index reveal"><span>01</span><p>Клиника<br>Для пациентов</p></div>
+      <div class="section-title reveal"><p class="kicker">ПЕРСОНАЛЬНЫЙ МАРШРУТ</p><h2>Искусство<br><i>внимания</i></h2></div>
+      <div class="clinic-grid">
+        <figure class="circle-art reveal"><img src="https://images.unsplash.com/photo-1589881133595-a3c085cb731d?auto=format&fit=crop&w=1200&q=88" alt="Классическая мраморная скульптура, деталь лица"></figure>
+        <div class="clinic-copy reveal">
+          <p class="lead">Консультация помогает определить запрос и обсудить подходящий план эстетического ухода со специалистом.</p>
+          <ol class="museum-list">
+            <li><span>01.1</span><b>Консультация косметолога</b></li>
+            <li><span>01.2</span><b>Уходовые процедуры</b></li>
+            <li><span>01.3</span><b>Аппаратные методики</b></li>
+            <li><span>01.4</span><b>Инъекционная косметология</b></li>
+          </ol>
+          <a class="pill light-pill" href="#contact">Записаться на консультацию <span>↗</span></a>
         </div>
       </div>
     </section>
 
-    <section class="directions section" id="directions">
-      <div class="container">
-        <div class="section-head"><p class="eyebrow">Два направления, единая экспертиза</p><h2>Как мы можем быть полезны</h2></div>
-        <div class="direction-grid">
-          <article class="direction-card clinic-card"><div class="card-no">01</div><div><p class="card-tag">КЛИНИКА</p><h3>Эстетическая медицина</h3><p>Деликатный подход к красоте, консультации специалистов и индивидуально подобранные процедуры.</p><a href="#clinic" class="text-link">Смотреть услуги <span aria-hidden="true">→</span></a></div></article>
-          <article class="direction-card distribution-card"><div class="card-no">02</div><div><p class="card-tag">ДИСТРИБУЦИЯ</p><h3>Решения для профессионалов</h3><p>Косметика, препараты и оборудование для специалистов и клиник с информационным сопровождением.</p><a href="#distribution" class="text-link">Смотреть каталог <span aria-hidden="true">→</span></a></div></article>
-        </div>
+    <section class="distribution" id="distribution">
+      <div class="section-index reveal"><span>02</span><p>Дистрибуция<br>Для специалистов и клиник</p></div>
+      <div class="distribution-head reveal">
+        <h2>Коллекция<br><i>для практики</i></h2>
+        <p>Косметика, препараты и оборудование для эстетической практики. Актуальный ассортимент и условия сотрудничества уточняются у команды Beauty Terra.</p>
       </div>
+      <div class="catalog-grid">
+        <article class="catalog-item reveal"><div class="catalog-visual stone"><span>BT</span></div><div class="catalog-caption"><span>Экспонат 002</span><h3>ELEMENTRĒ</h3><p>Профессиональная косметика</p><button type="button" class="arrow-link js-demo-action">Запросить каталог ↗</button></div></article>
+        <article class="catalog-item reveal"><div class="catalog-visual image"><img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1000&q=88" alt="Свет и фактура в эстетическом интерьере"></div><div class="catalog-caption"><span>Экспонат 003</span><h3>Аппаратные технологии</h3><p>Решения для оснащения кабинетов</p><button type="button" class="arrow-link js-demo-action">Обсудить оснащение ↗</button></div></article>
+        <article class="catalog-item reveal"><div class="catalog-visual ink"><svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="72"/><path d="M100 28v144M28 100h144M49 49l102 102M151 49L49 151"/></svg></div><div class="catalog-caption"><span>Экспонат 004</span><h3>Профессиональный ассортимент</h3><p>Категории препаратов для профильных специалистов</p><button type="button" class="arrow-link js-demo-action">Узнать подробнее ↗</button></div></article>
+      </div>
+      <p class="professional-note">Информация раздела адресована специалистам. Профессиональные продукты применяются квалифицированными специалистами в соответствии с инструкциями.</p>
     </section>
 
-    <section class="clinic section" id="clinic">
-      <div class="container split-layout">
-        <div class="portrait-wrap"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=85" alt="Косметолог проводит бережную уходовую процедуру"><div class="image-label">КЛИНИКА BEAUTY TERRA</div></div>
-        <div class="section-copy"><p class="eyebrow">Для пациентов</p><h2>Красота, основанная на внимании к вам</h2><p class="lead">Начинаем с консультации и подбираем подход с учетом индивидуальных особенностей и рекомендаций специалиста.</p>
-          <div class="service-list">
-            <article><span>01</span><div><h3>Консультация косметолога</h3><p>Знакомство, оценка запроса и план эстетического ухода.</p></div></article>
-            <article><span>02</span><div><h3>Уходовые процедуры</h3><p>Программы для комфорта, увлажнения и поддержания качества кожи.</p></div></article>
-            <article><span>03</span><div><h3>Аппаратные методики</h3><p>Процедуры по показаниям после очной консультации специалиста.</p></div></article>
-            <article><span>04</span><div><h3>Инъекционная косметология</h3><p>Индивидуальный план и информированное решение вместе со специалистом.</p></div></article>
-          </div>
-          <a class="btn btn-dark" href="#contact">Записаться на консультацию</a>
-        </div>
+    <section class="education dark" id="education">
+      <div class="section-index reveal"><span>03</span><p>Обучение<br>Профессиональная среда</p></div>
+      <div class="education-grid">
+        <div class="education-title reveal"><p class="kicker">ЗНАНИЕ / ПРАКТИКА / ДИАЛОГ</p><h2>Передавать<br>опыт <i>дальше</i></h2></div>
+        <div class="education-body reveal"><p class="lead">Направление для обмена профессиональными знаниями и знакомства с решениями Beauty Terra.</p><p>Формат, программа и даты мероприятий публикуются после подтверждения.</p><a class="pill light-pill" href="#contact">Узнать о мероприятиях <span>↗</span></a></div>
       </div>
+      <div class="folio reveal" aria-hidden="true"><span>B</span><span>T</span></div>
     </section>
 
-    <section class="distribution section" id="distribution">
-      <div class="container">
-        <div class="section-head light"><p class="eyebrow">Для специалистов и клиник</p><h2>Профессиональные решения для эстетической практики</h2><p>Демо-структура каталога. Конкретный ассортимент и условия сотрудничества необходимо подтвердить.</p></div>
-        <div class="product-grid">
-          <article class="product-card"><div class="product-icon" aria-hidden="true">✦</div><p class="card-tag">ПРОФЕССИОНАЛЬНАЯ КОСМЕТИКА</p><h3>ELEMENTRĒ</h3><p>Линии для профессионального применения и домашнего ухода. Наличие и назначение уточняются у специалиста.</p><button class="text-link js-demo-action" type="button">Запросить каталог <span>→</span></button></article>
-          <article class="product-card featured"><div class="product-icon" aria-hidden="true">◌</div><p class="card-tag">ОБОРУДОВАНИЕ</p><h3>Аппаратные технологии</h3><p>Решения для оснащения эстетических кабинетов. Подбор конфигурации после консультации.</p><button class="text-link js-demo-action" type="button">Обсудить оснащение <span>→</span></button></article>
-          <article class="product-card"><div class="product-icon" aria-hidden="true">◇</div><p class="card-tag">ПРЕПАРАТЫ</p><h3>Профессиональный ассортимент</h3><p>Категории для профильных специалистов. Состав каталога и документы требуют подтверждения.</p><button class="text-link js-demo-action" type="button">Узнать подробнее <span>→</span></button></article>
-        </div>
-        <div class="pro-note"><span class="pro-note-mark">i</span><p>Информация в разделе предназначена для демонстрации структуры сайта. Профессиональные продукты применяются только квалифицированными специалистами в соответствии с инструкциями.</p></div>
-      </div>
+    <section class="philosophy" id="about">
+      <div class="section-index reveal"><span>04</span><p>Философия<br>Beauty Terra</p></div>
+      <blockquote class="reveal">«Ясная коммуникация.<br>Профессиональный выбор.<br><i>Уважение к индивидуальности.</i>»</blockquote>
+      <div class="principles reveal"><article><span>01</span><h3>Осознанный выбор</h3><p>Объясняем варианты, чтобы решение было взвешенным.</p></article><article><span>02</span><h3>Персональный подход</h3><p>Учитываем запрос и рекомендации специалиста.</p></article><article><span>03</span><h3>Профессиональная среда</h3><p>Соединяем интересы пациентов и индустрии.</p></article></div>
     </section>
 
-    <section class="about section" id="about">
-      <div class="container about-grid">
-        <div><p class="eyebrow">Подход Beauty Terra</p><h2>Забота в каждой детали</h2><p class="lead">Премиальный сервис начинается не с громких обещаний, а с ясной коммуникации, профессионального выбора и уважения к индивидуальности.</p></div>
-        <div class="values-grid">
-          <article><span>01</span><h3>Осознанный выбор</h3><p>Объясняем варианты и помогаем принять взвешенное решение.</p></article>
-          <article><span>02</span><h3>Персональный подход</h3><p>Учитываем запрос, особенности и рекомендации специалиста.</p></article>
-          <article><span>03</span><h3>Профессиональная среда</h3><p>Развиваем направление для пациентов и индустрии красоты.</p></article>
-          <article><span>04</span><h3>Эстетика сервиса</h3><p>Создаем понятный, деликатный и комфортный путь клиента.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section" id="contact">
-      <div class="container contact-card">
-        <div><p class="eyebrow">Свяжитесь с нами</p><h2>Подберем нужное направление</h2><p>Оставьте запрос на консультацию или сотрудничество. Это демо-форма, данные никуда не отправляются.</p><div class="contact-links"><a href="https://t.me/beautyterragroup" target="_blank" rel="noopener">Telegram: @beautyterragroup</a><a href="https://www.instagram.com/beautyterra.uz" target="_blank" rel="noopener">Instagram: @beautyterra.uz</a><span>Адрес и телефон: Демо, требуется подтверждение</span></div></div>
-        <form class="demo-form" id="demo-form"><label>Направление<select name="direction"><option>Клиника</option><option>Дистрибуция</option></select></label><label>Как к вам обращаться<input name="name" autocomplete="name" placeholder="Ваше имя" required></label><label>Телефон или Telegram<input name="contact" autocomplete="tel" placeholder="+998 ..." required></label><button class="btn btn-primary" type="submit">Оставить запрос</button><p class="form-status" id="form-status" role="status" aria-live="polite"></p></form>
+    <section class="contact dark" id="contact">
+      <div class="contact-heading reveal"><p class="kicker">СВЯЗАТЬСЯ С BEAUTY TERRA</p><h2>Начнём<br><i>диалог</i></h2></div>
+      <div class="contact-grid">
+        <div class="contact-info reveal"><p>Выберите направление — клиника, дистрибуция или обучение. Это демонстрационная форма: данные не отправляются.</p><div class="contact-links"><a href="https://t.me/beautyterragroup" target="_blank" rel="noopener">Telegram ↗<small>@beautyterragroup</small></a><a href="https://www.instagram.com/beautyterra.uz" target="_blank" rel="noopener">Instagram ↗<small>@beautyterra.uz</small></a></div></div>
+        <form class="contact-form reveal" id="demo-form">
+          <label><span>Направление</span><select name="direction"><option>Клиника</option><option>Дистрибуция</option><option>Обучение</option></select></label>
+          <label><span>Как к вам обращаться</span><input name="name" autocomplete="name" required placeholder="Ваше имя"></label>
+          <label><span>Телефон или Telegram</span><input name="contact" autocomplete="tel" required placeholder="+998 ..."></label>
+          <button class="submit" type="submit">Оставить запрос <span>↗</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
-
-  <footer><div class="container footer-grid"><a class="brand footer-brand" href="#top"><span class="brand-mark">BT</span><span><b>BEAUTY TERRA</b><small>UZBEKISTAN</small></span></a><p>Демонстрационная версия сайта. Не является медицинской рекомендацией или публичной офертой.</p><p>© <span id="year"></span> Beauty Terra • Демо</p></div></footer>
+  <footer><a href="#top">BEAUTY TERRA</a><p>Демонстрационная версия. Не является медицинской рекомендацией или публичной офертой.</p><span>© <span id="year"></span></span></footer>
 </body>
 </html>
